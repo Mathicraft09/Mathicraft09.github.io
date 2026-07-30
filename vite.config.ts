@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import react, { reactCompilerPreset } from '@vitejs/plugin-react'
-import babel from '@rolldown/plugin-babel'
+import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev
 export default defineConfig({
-  base: '/Mathicraft09.github.io/', // <-- Remplacez "monSite" par le nom exact de votre dépôt GitHub
+  // Remplacez 'monSite' par le nom exact de votre dépôt GitHub en minuscules si besoin
+  base: '/Mathicraft09.github.io/', 
   plugins: [react()],
 })

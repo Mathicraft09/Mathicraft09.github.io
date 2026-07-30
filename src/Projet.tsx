@@ -1,9 +1,15 @@
-import ReactMarkdown from 'react-markdown';
-import KanbanMarkdown from './README_projet/kanban_readme.md?raw'; // L'extension ?raw importe le texte brut
-import EcoTrackerMarkdown from './README_projet/eco-tracker.md?raw';
-import './Projet.css'
+import type { Dispatch, SetStateAction } from 'react'; 
+import ReactMarkdown from 'react-markdown'; 
+import KanbanMarkdown from './README_projet/kanban_readme.md?raw'; 
+import EcoTrackerMarkdown from './README_projet/eco-tracker.md?raw'; 
+import './Projet.css';
 
-function Projet() {
+interface ProjetProps {
+  targetAnchor: string | null;
+  setTargetAnchor: Dispatch<SetStateAction<string | null>>;
+}
+
+function Projet({}: ProjetProps) {
     return (
         <main>
         <div className="projets">

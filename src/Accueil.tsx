@@ -1,6 +1,5 @@
 import './Accueil.css';
 import './Projet.tsx';
-import { HashLink } from 'react-router-hash-link';
 
 type AccueilProps = {
   onSelectProjet: (anchorId: string) => void;
