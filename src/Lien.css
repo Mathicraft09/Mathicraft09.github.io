@@ -1,0 +1,52 @@
+.Liens {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.Liens h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.liens-section {
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  background-color: var(--bg-card);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.liens-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.liens-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liens-section li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+}
+
+.email-link {
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  opacity: 0.8;
+}

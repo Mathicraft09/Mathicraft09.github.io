@@ -1,0 +1,91 @@
+/* --- VARIABLES DE THÈME --- */
+:root {
+  /* Mode Clair (Minimaliste Monochrome) */
+  --bg-page: #f8f9fa;
+  --bg-card: #ffffff;
+  --bg-accent: #f1f3f5;
+  --border-color: #111111;
+  --text-primary: #111111;
+  --text-secondary: #495057;
+  --btn-bg: #ffffff;
+  --btn-text: #111111;
+  --btn-hover-bg: #111111;
+  --btn-hover-text: #ffffff;
+  --link-color: #0056b3;
+}
+
+body.dark-theme {
+  /* Mode Sombre (Fond sombre contrasté) */
+  --bg-page: #121212;
+  --bg-card: #1e1e1e;
+  --bg-accent: #2a2a2a;
+  --border-color: #3d3d3d;
+  --text-primary: #f1f3f5;
+  --text-secondary: #a0a0a0;
+  --btn-bg: #2a2a2a;
+  --btn-text: #ffffff;
+  --btn-hover-bg: #ffffff;
+  --btn-hover-text: #121212;
+  --link-color: #6ea8fe;
+}
+
+/* --- STYLES DE BASE --- */
+body {
+  padding: 1rem;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+header {
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--bg-card);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-menu button {
+  padding: 0.5rem 0.8rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.nav-menu button:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+
+.theme-toggle-btn {
+  margin-left: 0.5rem;
+  border-radius: 4px;
+}
+
+main {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg-card);
+}
+
+footer {
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--bg-card);
+}
